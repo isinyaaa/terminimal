@@ -3,7 +3,7 @@
 .footer {
   padding: 40px 0;
   flex-grow: 0;
-  opacity: .5;
+  opacity: 0.5;
 
   &__inner {
     display: flex;
@@ -37,7 +37,7 @@
     & > *:not(:last-child):not(:only-child) {
       margin-right: 10px;
 
-       @media (max-width: $tablet-max-width) {
+      @media (max-width: $tablet-max-width) {
         border: none;
         padding: 0;
         margin: 0;
