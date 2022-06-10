@@ -61,6 +61,22 @@
                     </span>
                 {% endif -%}
             </div>
+
+            <div class="pagination__comments">
+                <script src="https://giscus.app/client.js"
+                    data-repo="{{ config.extra.repo }}"
+                    data-repo-id="{{ config.extra.repo_id }}"
+                    data-category-id="{{ config.extra.category_id }}"
+                    data-mapping="{{ config.extra.mapping | default(value="pathname") }}"
+                    data-reactions-enabled="{{ config.extra.reactions_enabled | default(value="1") }}"
+                    data-emit-metadata="{{ config.extra.emit_metadata | default(value="0") }}"
+                    data-input-position="{{ config.extra.input_position | default(value="top") }}"
+                    data-theme="{{ config.extra.theme | default(value="dark") }}"
+                    data-lang="{{ config.default_language | default(value="en") }}"
+                    crossorigin="anonymous"
+                    async>
+                </script>
+            </div>
         </div>
     {% endif -%}
 {% endmacro earlier_later %}
